@@ -52,11 +52,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="wkhtmltopdf.exe">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="WkHtmlWrapper\Wrapper.csproj">
       <Project>{86457364-5864-4818-95F2-6EFBF360C39B}</Project>
       <Name>Wrapper</Name>
