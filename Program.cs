@@ -10,7 +10,6 @@ namespace HtmlToPdfConsole
             //google test
             WkHtmlWrapper.CreatePdfFromUrl("www.google.com", "google.pdf");
             WkHtmlWrapper.CreatePdfFromUrl("www.yahoo.com","yahoo.pdf");
-
         }
     }
 }
