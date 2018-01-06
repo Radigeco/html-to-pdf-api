@@ -10,7 +10,7 @@ namespace API.Controllers
         [HttpPost]
         public IHttpActionResult ConvertUrlToPdf(PdfRequestModel request)
         {
-            var mappedPath = System.Web.Hosting.HostingEnvironment.MapPath("~/App_Data") + "\\" + request.OutputDirectory;
+            var mappedPath = System.Web.Hosting.HostingEnvironment.MapPath("~/App_Data") + "\\" + request.OutputFileName;
             var wkhtmlPath = System.Web.Hosting.HostingEnvironment.MapPath("~/Bin") + "\\wkhtmltopdf";
             var response = WkHtmlWrapper.CreatePdfFromUrl(request.Url, mappedPath, wkhtmlPath);
             return Ok(response);

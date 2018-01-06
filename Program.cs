@@ -1,5 +1,4 @@
-﻿using Utilities;
-using Wrapper;
+﻿using Wrapper;
 
 namespace HtmlToPdfConsole
 {
